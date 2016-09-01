@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>penduinART thingmaker</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <style>
+      body {
+        background: silver;
+      }
+      #resources img {
+        display: none;
+      }
+    </style>
+    <script src="src/penduinart.js"></script>
+    <script src="src/thingmaker.js"></script>
+  </head>
+  <body>
+    <h1>Step 0</h1>
+    <p>
+	  Edit this HTML file and toss in your image pieces.
+    </p>
+    <hr>
+    <h1>Step 1</h1>
+    <p>
+      Futz with the individual settings for each image piece.
+    </p>
+    <div id="resources">
+<!-- TOSS PIECES IN HERE! -->
+
+
+      <img src="farmer/arm-l01.png">
+      <img src="farmer/arm-r01.png">
+      <img src="farmer/body01.png">
+      <img src="farmer/eye01.png">
+      <img src="farmer/eye02.png">
+      <img src="farmer/foot-l01.png">
+      <img src="farmer/foot-r01.png">
+      <img src="farmer/hair01.png">
+      <img src="farmer/hair02.png">
+      <img src="farmer/hair03.png">
+      <img src="farmer/hat01.png">
+      <img src="farmer/hat02.png">
+      <img src="farmer/head01.png">
+      <img src="farmer/lash-l.png">
+      <img src="farmer/lash-r.png">
+      <img src="farmer/leg-l01.png">
+      <img src="farmer/leg-l02.png">
+      <img src="farmer/leg-r01.png">
+      <img src="farmer/leg-r02.png">
+      <img src="farmer/lip01.png">
+      <img src="farmer/lip02.png">
+      <img src="farmer/pupil01.png">
+      <img src="farmer/pupil02.png">
+      <img src="farmer/shoulder01.png">
+
+
+<!-- TOSS PIECES IN HERE! -->
+    </div>
+    <hr>
+    <h1>Step 2</h1>
+    <p>
+      Make the thing.
+    </p>
+    thing name: <input id="name">
+    <br>
+    thing scale: <input id="scale" value="1.0">
+    <br>
+    active pieces: <select multiple id="pieces"></select>
+    drag mode:
+    <select id="mode">
+      <option value="offset">offset</option>
+      <option value="rotate">rotate</option>
+      <option value="scale">scale</option>
+      <option value="alpha">alpha</option>
+<!--  <option value="hitbox">set hitbox</option>
+      <option value="pan">pan view</option>
+      <option value="zoom">zoom view</option>  -->
+    </select>
+    <br>
+    <canvas width=640 height=360 id="assemble"></canvas>
+    <hr>
+    <h1>Step 3</h1>
+    <p>
+      Pose the thing.
+    </p>
+    active pieces: <select multiple id="posepieces"></select>
+    drag mode:
+    <select id="posemode">
+      <option value="offset">offset</option>
+      <option value="rotate">rotate</option>
+      <option value="scale">scale</option>
+      <option value="alpha">alpha</option>
+    </select>
+    <br>
+    <canvas width=640 height=360 id="pose"></canvas>
+    <br>
+    <input type="button" id="posereset" value="reset">
+    pose name: <input id="posename">
+    <input type="button" id="poseadd" value="add &gt;&gt;">
+    <select id="poselist" style="border: 4px solid blue;"></select>
+    <input type="button" id="posedel" value="&lt;&lt; delete">
+    <hr>
+    <h1>Step 4</h1>
+    <p>
+      TODO: build animation editing tools :^)
+    </p>
+    <hr>
+    <h1>Step 5</h1>
+    <p>
+      Here is the thing's JSON!
+    </p>
+    <textarea cols=80 rows=24 id="json"></textarea>
+  </body>
+</html>
