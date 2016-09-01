@@ -71,6 +71,18 @@ function tick(scene, time) {
 		LMF.thing.farmer.$["foot-l01"].rotate = 5 + (bob2 * 20) + (wiggle * 30);
 		LMF.thing.farmer.$["leg-r01"].rotate = wiggle2 * -60;
 		LMF.thing.farmer.$["foot-r01"].rotate = 5 + (bob2 * 20) - (wiggle * 30);
+	} else {
+		LMF.thing.farmer.$["body01"].rotate = 1 + wiggle * 1;
+		LMF.thing.farmer.$["head01"].rotate = wiggle2 * -1;
+		LMF.thing.farmer.$["eye01"].rotate = 0;
+		LMF.thing.farmer.$["eye02"].rotate = 0;
+		LMF.thing.farmer.$["hair03"].rotate = wiggle * 2;
+		LMF.thing.farmer.$["arm-l01"].rotate = 45 + wiggle2 * -1;
+		LMF.thing.farmer.$["arm-r01"].rotate = -65 + wiggle2 * 1;
+		LMF.thing.farmer.$["leg-l01"].rotate = 40 - wiggle * 1;
+		LMF.thing.farmer.$["foot-l01"].rotate = 0;
+		LMF.thing.farmer.$["leg-r01"].rotate = 0 - wiggle * 1;
+		LMF.thing.farmer.$["foot-r01"].rotate = 0;
 	}
 
 	/*
