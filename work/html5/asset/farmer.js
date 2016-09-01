@@ -28,7 +28,7 @@ LOAD({
 					"scale": 1,
 					"alpha": 1,
 					"offset": {
-						"x": 52,
+						"x": 54,
 						"y": 96
 					},
 					"above": [],
