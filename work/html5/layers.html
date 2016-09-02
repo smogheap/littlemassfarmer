@@ -1,0 +1,42 @@
+<html>
+  <head>
+   <title>little mass farmer</title>
+   <meta name="viewport" content="initial-scale=1.0,user-scalable=no" />
+    <style>
+      body, html {
+        background: black;
+        overflow: hide;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #page {
+        display: table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #center {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+      }
+      #display {
+      }
+    </style>
+
+    <script type="text/javascript" src="src/penduinart.js"></script>
+    <script type="text/javascript" src="src/layers.js"></script>
+	<!-- data to LOAD() below -->
+    <script type="text/javascript" src="asset/farmer.js"></script>
+    <script type="text/javascript" src="asset/planet01.js"></script>
+
+  </head>
+  <body>
+    <div id="page"><div id="center">
+      <canvas id="display"></canvas>
+    </div></div>
+  </body>
+</html>
